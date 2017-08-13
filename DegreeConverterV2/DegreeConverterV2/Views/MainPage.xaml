@@ -18,8 +18,7 @@
             <Entry
                 Text="{Binding Celsius, Mode=TwoWay}"
                 Placeholder="Value in Celsius..."
-                PlaceholderColor="Gray"
-                Keyboard="Numeric">
+                PlaceholderColor="Gray">
             </Entry>
             <Button
                 Command="{Binding ConvertCommand}"
@@ -32,8 +31,7 @@
             <Entry 
                 Text="{Binding Fahrenheit, Mode=TwoWay}"
                 Placeholder="Value in Fahrenheit..."
-                PlaceholderColor="Gray"
-                Keyboard="Numeric">
+                PlaceholderColor="Gray">
             </Entry>
             <Label 
                 Text="Kelvin" 
@@ -42,8 +40,7 @@
             <Entry 
                 Text="{Binding Kelvin, Mode=TwoWay}"
                 Placeholder="Value in Kelvin..."
-                PlaceholderColor="Gray"
-                Keyboard="Numeric">
+                PlaceholderColor="Gray">
             </Entry>
             <Button
                 Command="{Binding CleanCommand}"

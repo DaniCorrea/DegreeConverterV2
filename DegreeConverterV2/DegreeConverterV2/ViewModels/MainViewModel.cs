@@ -87,7 +87,7 @@
         async void _Convert() {
             if (string.IsNullOrEmpty(Celsius))
             {
-                await Application.Current.MainPage.DisplayAlert("Error", "Please enter a numeric value in Celsius...", "Accept");
+                await Application.Current.MainPage.DisplayAlert("Error", "Please enter a value in Celsius...", "Accept");
                 return;
             }
 
@@ -101,8 +101,8 @@
             var fahrenheit = (9 * Convert.ToDouble(celsius) / 5) + 32;
             var kelvin = Convert.ToDouble(celsius) + 273.15;
 
-            Kelvin = String.Format("{0} °K", kelvin);
-            Fahrenheit = String.Format("{0} °F", fahrenheit);
+            Kelvin = String.Format("{0:0.##} °K", kelvin);
+            Fahrenheit = String.Format("{0:0.##} °F", fahrenheit);
         }
 
         public ICommand CleanCommand
